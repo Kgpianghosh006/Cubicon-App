@@ -1,0 +1,25 @@
+# C++ Backend (CMake)
+backend/build/
+build/
+*.exe
+*.o
+*.obj
+*.dll
+*.lib
+*.a
+
+# React Frontend (Vite)
+frontend/node_modules/
+frontend/dist/
+frontend/.eslintcache
+*.env
+
+# OS & Editor Files
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp

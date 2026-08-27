@@ -1,0 +1,12 @@
+[phases.setup]
+nixPkgs = ["cmake", "gcc"]
+aptPkgs = ["libopencv-dev"]
+
+[phases.build]
+cmds = [
+    "cd backend && cmake -B build",
+    "cd backend && cmake --build build --target rubiks_server"
+]
+
+[start]
+cmd = "cd backend && ./build/rubiks_server"
