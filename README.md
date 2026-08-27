@@ -2,7 +2,7 @@
 
 Cubicon is a full-stack web application that solves any Rubik's Cube state. Built with a highly responsive React/Vite frontend and powered by a highly optimized C++ backend REST API. Cubicon combines computer vision for automatic face scanning with advanced pathfinding algorithms to calculate the shortest solution, then visualizes it via an interactive 3D WebGL player.
 
-### [Live Demo](YOUR_VERCEL_LINK_HERE) - Experience the solver in action.
+### Live Demo: https://cubicon-one.vercel.app/
 
 ---
 
