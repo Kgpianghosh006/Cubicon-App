@@ -123,7 +123,20 @@ void runSolver(const string& algo, T cube, httplib::Response& res) {
 
 int main(int argc, char** argv) {
     
-    string loadedPath = "backend/Databases/cornerDepth5V1.txt";
+    std::vector<string> pathsToTry = {
+        "backend/Databases/cornerDepth5V1.txt",
+        "Databases/cornerDepth5V1.txt",
+        "../Databases/cornerDepth5V1.txt",
+        "../../Databases/cornerDepth5V1.txt"
+    };
+    string loadedPath = "";
+    for (const auto& p : pathsToTry) {
+        if (g_pdb.fromFile(p)) {
+            g_pdbLoaded = true;
+            loadedPath = p;
+            break;
+        }
+    }
 
     if (g_pdbLoaded) {
         cout << "Loaded PDB successfully from " << loadedPath << endl;
